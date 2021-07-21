@@ -1,4 +1,4 @@
-import logo from "./logo.svg";
+// import logo from "./logo.svg";
 import "./App.css";
 import React, { useState, useEffect } from "react";
 
@@ -37,9 +37,9 @@ function App() {
           listNews.articles &&
           listNews.articles.map((item) => (
             <section className="Article">
-              
+
               <a key={item.publishedAt} href={item.url}>{item.title}</a>
-              <img className="Image" src={item.urlToImage}></img>
+              <img className="Image" src={item.urlToImage} alt={item.title} />
             </section>
           ))
         }
