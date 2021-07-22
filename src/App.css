@@ -131,6 +131,10 @@
   #registrarme {
     width: 100%;
   }
+  #ingresar:active,
+  #registrarme:active {
+    background-color: inherit;
+  }
 }
 
 .Image {
