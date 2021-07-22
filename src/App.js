@@ -1,6 +1,7 @@
 // import logo from "./logo.svg";
 import "./App.css";
 import React, { useState, useEffect } from "react";
+import Cabecera from "./components/Cabecera";
 
 function App() {
   const [listNews, setListNews] = useState({});
@@ -31,18 +32,18 @@ function App() {
 
   return (
     <div className="App">
+      <Cabecera></Cabecera>
       <h1>Lista Noticias de Tesla</h1>
       <section className="Section">
-        {
-          listNews.articles &&
+        {listNews.articles &&
           listNews.articles.map((item) => (
             <section className="Article">
-
-              <a key={item.publishedAt} href={item.url}>{item.title}</a>
+              <a key={item.publishedAt} href={item.url}>
+                {item.title}
+              </a>
               <img className="Image" src={item.urlToImage} alt={item.title} />
             </section>
-          ))
-        }
+          ))}
       </section>
     </div>
   );

@@ -2,16 +2,13 @@ import React from "react";
 
 export default function Cabecera() {
   return (
-    <header>
-      <div>
-        <p>Logo</p>
-        <button>
-          <a href="">Ingresar</a>
-        </button>
-        <button>
-          <a href="">Registrarme</a>
-        </button>
-      </div>
+    <header className="Cabecera">
+      <h1 className="TituloPrincipal">Logo</h1>
+      <nav className="NavegacionLogin">
+        <button id="ingresar">Ingresar</button>
+
+        <button id="registrarme">Registrarme</button>
+      </nav>
     </header>
   );
 }
