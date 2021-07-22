@@ -57,11 +57,25 @@
   height: 60pt;
 }
 
+.hamburger-react {
+  display: none;
+  background-color: inherit;
+  float: right;
+  margin-top: 10px;
+  width: 40pt;
+}
+
+.NavegacionLoginActiva {
+  background-color: inherit;
+  height: 60pt;
+  float: right;
+  width: 160pt;
+}
 .NavegacionLogin {
   background-color: inherit;
   height: 60pt;
   float: right;
-  width: 200pt;
+  width: 160pt;
 }
 
 #ingresar,
@@ -89,6 +103,34 @@
   display: inline-block;
   position: relative;
   background-color: inherit;
+}
+
+@media screen and (max-width: 800px) {
+  .hamburger-react {
+    float: right;
+    display: inline-flex;
+  }
+  .HamburgerDiv {
+    background-color: inherit;
+    float: right;
+  }
+  .NavegacionLogin {
+    display: none;
+  }
+  .NavegacionLoginActiva {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    background-color: rgb(12, 33, 73);
+    top: 80px;
+    transition: all 0.4s;
+    text-align: center;
+    flex-direction: column;
+  }
+  #ingresar,
+  #registrarme {
+    width: 100%;
+  }
 }
 
 .Image {
