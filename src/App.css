@@ -49,15 +49,6 @@
   border-radius: 8px;
 }
 
-.Image {
-<<<<<<< HEAD
-  max-width: 50%;
-}
-
-.Section {
-  display: flex;
-}
-
 .Cabecera {
   background-color: rgb(12, 33, 73);
   font-size: 14pt;
@@ -67,6 +58,7 @@
 }
 
 .NavegacionLogin {
+  background-color: inherit;
   height: 60pt;
   float: right;
   width: 200pt;
@@ -96,8 +88,10 @@
   color: aliceblue;
   display: inline-block;
   position: relative;
+  background-color: inherit;
 }
-=======
+
+.Image {
   max-width: 60%;
   max-height: 60%;
   margin: 10%;
@@ -135,4 +129,3 @@
   margin: 1% 1% 0 1%;
   position: relative;
 }
->>>>>>> ba1fec65f12931f0d926d5e3c39798ff0110a999

@@ -34,34 +34,32 @@ function App() {
 
   return (
     <div className="App">
-<<<<<<< HEAD
       <Cabecera></Cabecera>
-      <h1>Lista Noticias de Tesla</h1>
-=======
       <h1 className="h1">Lista Noticias de Tesla</h1>
->>>>>>> ba1fec65f12931f0d926d5e3c39798ff0110a999
       <section className="Section">
         {listNews.articles &&
           listNews.articles.map((item) => (
-<<<<<<< HEAD
-            <section className="Article">
-              <a key={item.publishedAt} href={item.url}>
+            <div className="Article">
+              <a key={item.publishedAt} className="a" href={item.url}>
                 {item.title}
               </a>
-              <img className="Image" src={item.urlToImage} alt={item.title} />
-            </section>
-          ))}
-=======
-            <div className="Article">
-
-              <a key={item.publishedAt} className="a" href={item.url}>{item.title}</a><br />
-              <img key={item.publishedAt} className="Image" src={item.urlToImage} alt={item.title} /><br />
-              <p key={item.publishedAt} className="p">{item.content}</p><br />
-              <p className="foot">{item.author} <br /> {item.publishedAt}</p>
+              <br />
+              <img
+                key={item.publishedAt}
+                className="Image"
+                src={item.urlToImage}
+                alt={item.title}
+              />
+              <br />
+              <p key={item.publishedAt} className="p">
+                {item.content}
+              </p>
+              <br />
+              <p className="foot">
+                {item.author} <br /> {item.publishedAt}
+              </p>
             </div>
-          ))
-        }
->>>>>>> ba1fec65f12931f0d926d5e3c39798ff0110a999
+          ))}
       </section>
       <Footer />
     </div>
