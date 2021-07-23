@@ -1,8 +1,8 @@
 // import logo from "./logo.svg";
 import "./App.css";
-import Footer from "./Footer";
 import React, { useState, useEffect } from "react";
 import Cabecera from "./components/Cabecera";
+import Footer from "./components/Footer";
 
 function App() {
   const [listNews, setListNews] = useState({});
@@ -33,8 +33,9 @@ function App() {
   }, []);
 
   return (
+    
     <div className="App">
-      <Cabecera></Cabecera>
+      <Cabecera />
       <h1 className="h1">Lista Noticias de Tesla</h1>
       <section className="Section">
         {listNews.articles &&
@@ -63,6 +64,7 @@ function App() {
       </section>
       <Footer />
     </div>
+    
   );
 }
 
