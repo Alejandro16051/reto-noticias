@@ -12,11 +12,11 @@ function App() {
     // URL API: https://newsapi.org/v2/everything?q=tesla&from=2021-06-19&sortBy=publishedAt&apiKey=0c76dce6efd947d0bd1f6ac1f4324b9e
     // NEW URL: https://newsapi.org/v2/everything?q=tesla&from=2021-07-19&apiKey=34d6193c617441eeb152186da0e6f8eb
 
-    // const proxyUrl = "https://cors-anywhere.herokuapp.com/"; // URL PROXY (si no te permite por temas de permisos)
+    const proxyUrl = "https://cors-anywhere.herokuapp.com/"; // URL PROXY (si no te permite por temas de permisos)
     const qInTitle = "tesla"; // noticias sobre "tesla"
     const from = "2021-07-19"; // fecha noticias publicadas (desde)
     const apiKey = "34d6193c617441eeb152186da0e6f8eb"; // reemplazar tu API KEY
-    const url = `https://newsapi.org/v2/everything?q=${qInTitle}&from=${from}&apiKey=${apiKey}`;
+    const url = `${proxyUrl}https://newsapi.org/v2/everything?q=${qInTitle}&from=${from}&apiKey=${apiKey}`;
     const request = new Request(url);
 
     fetch(request)
